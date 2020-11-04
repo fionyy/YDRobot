@@ -121,3 +121,4 @@ if __name__ == "__main__":
     # xcel.save("d:\\cms_api_test\\data\\cms_api_test_new.xls)"
 
     xcel.set_cell("getVideoArticleList", 3, 0, "testdata")
+    xcel.save("d:\\cms_api_test\\data\\cms_api_test_new.xls")
