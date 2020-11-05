@@ -22,7 +22,7 @@ class ExcelParser(object):
         self.xlw_book = copy.copy(self.xl_book)
         style = xlwt.XFStyle()
         style.border = True
-        self.stype = style
+        self.style = style
 
 
     def get_sheet_count(self):
@@ -119,6 +119,6 @@ if __name__ == "__main__":
     # print(xcel.get_cell("getVideoArticleList", 0, 0))
     # print(xcel.get_range_values("getVideoArti cleList", "0:1:3"))
     # xcel.save("d:\\cms_api_test\\data\\cms_api_test_new.xls)"
-
+    # 先写入再保存
     xcel.set_cell("getVideoArticleList", 3, 0, "testdata")
     xcel.save("d:\\cms_api_test\\data\\cms_api_test_new.xls")

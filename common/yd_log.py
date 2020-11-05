@@ -39,7 +39,7 @@ class Log(object):
         self.logger.addHandler(self.fh)
         self.logger.addHandler(self.ch)
 
-    # 给日志设置级别
+    # 给日志设置级别 用于调试时调整日志级别用，与默认级别互不影响
     def set_level(self, level):
         self.fh.setLevel(level)
         self.ch.setLevel(level)
