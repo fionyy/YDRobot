@@ -14,18 +14,19 @@
 G_OK = "ok"
 G_FAIL = "fail"
 G_TIMEOUT = "timeout"
+G_EXCEPTION = "exception"
 G_NOSUCH_EXCEPTION = "nosuch"
 
 G_RESULT = {
     G_OK: 0,
     G_FAIL: 1,
     G_TIMEOUT: 2,
-    G_NOSUCH_EXCEPTION: 3,
-
+    G_EXCEPTION: 3,
+    G_NOSUCH_EXCEPTION: 4
 }
 
 
-G_RUTURN_STR = {
+G_RETURN_STR = {
     0: r"成功",
     1: r"失败",
     2: r"超时",
@@ -61,8 +62,8 @@ G_LOCAL_KEY = {
     "get_text": "get_text",  #  获取文本
     "get_attr": "get_attr",  #  获取属性
     "click": "click",  #  鼠标点击
-    "start_browser": "start_brower",  #  启动浏览器
-    "openurl": "get",  #  打开网页
+    "start_browser": "start_browser",  #  启动浏览器
+    "open_url": "get",  #  打开网页
     "get": "get",  #  打开网页
     "set_page_timeout": "set_page_timeout",  #  设置见面加载 timeout
     "snapshot": "snapshot",  #截图
@@ -81,7 +82,8 @@ G_LOCAL_KEY = {
     "switch_to_alert": "switch_to_alert",  #  切换至alert窗口
     "max_window": "max_window",  # 最大化浏览器
     "switch_to_default_frame": "switch_to_default_frame",  #切换至默认的frame
-    "clear": "clear_cookies"  #清除所有cookies
+    "clear": "clear_cookies",  #清除所有cookies
+    "key_down": "key_press"  #  键盘按下
 
 }
 
@@ -98,7 +100,7 @@ G_VERIFY_KEY = {
 
 # 键盘操作关键字定义
 G_KEYWORD_KEY = {
-    "keydown": "key_press"  #  键盘按下
+    "key_down": "key_press"  #  键盘按下
 }
 
 

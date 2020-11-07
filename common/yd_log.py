@@ -10,7 +10,7 @@
 import logging
 import os
 
-class Log(object):
+class YdLog(object):
 
     def __init__(self, path, level=logging.WARNING, log=u"YD Logger"):
         '''
